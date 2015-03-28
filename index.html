@@ -14,5 +14,18 @@
       <p>{{item}}</p>
     </div>
   </div>
+
+  <div>
+    <form>
+      <p id="textcolor">From</p><input ng-model="postcode1" type="text">
+      <p id="textcolor">To</p><input ng-model="postcode2" type="text">
+      <input type="submit" value="Submit" ng-click="postcode()" >
+    </form>
+    <div ng-repeat="item in destination" id="journey_planner">
+    <p id="textcolor">{{item}}</p>
+
+    <p id="textcolor">Arrival Time {{arrival_time}}</p>
+  </div>
+  </div>
  </body>
 </html>
