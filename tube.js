@@ -8,8 +8,7 @@ tube.controller('tubeController', function($scope, $http) {
     .success(function(data){
       $scope.lines = data.lines;
        $.each($scope.lines, function(name){
-        $scope.holder.push(this.friendly_name);
-        $scope.holder.push(this.status);
+        $scope.holder.push(this.friendly_name + " " + this.status );
         console.log($scope.holder)
       });
   });
