@@ -9,8 +9,10 @@
    <script src="tube.js"></script>
  </head>
  <body ng-controller="tubeController">
+  <div id="holder">
     <div ng-repeat="item in holder track by $index" id="tube_status">
-      {{item}}
+      <p>{{item}}</p>
     </div>
+  </div>
  </body>
 </html>

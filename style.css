@@ -1,4 +1,67 @@
-#tube_status{
-  background-color: grey;
-  padding: 5px;
+@font-face {
+    font-family: tubeFont;
+    src: url(tube.ttf);
 }
+
+p{
+  color: white;
+  font-family: tubeFont;
+}
+
+#tube_status{
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 20px;
+    margin-right: 74%;
+}
+
+#tube_status:nth-child(1) {
+    background: #B36305;
+}
+
+#tube_status:nth-child(2) {
+    background: #E32017;
+}
+
+#tube_status:nth-child(3) {
+    background: #FFD300;
+}
+
+#tube_status:nth-child(4) {
+    background: #00782A;
+}
+
+#tube_status:nth-child(5) {
+    background: #F3A9BB;
+}
+
+#tube_status:nth-child(6) {
+    background: #A0A5A9;
+}
+
+#tube_status:nth-child(7) {
+    background: #9B0056;
+}
+
+#tube_status:nth-child(8) {
+    background: #000000;
+}
+
+#tube_status:nth-child(9) {
+    background: #003688;
+}
+
+#tube_status:nth-child(10) {
+    background: #0098D4;
+}
+
+#tube_status:nth-child(11) {
+    background: #95CDBA;
+}
+
+#tube_status:nth-child(12) {
+    background: #00A4A7;
+}
+
