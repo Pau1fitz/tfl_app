@@ -9,6 +9,16 @@
    <script src="tube.js"></script>
  </head>
  <body ng-controller="tubeController">
+  <div id="header">
+    <div id="brand"></div>
+    <p id="logo">PFL</p>
+    <ul>
+      <li>Plan a Journey</li>
+      <li><a href="https://www.tfl.gov.uk/cdn/static/cms/documents/standard-tube-map.pdf"></a>Tube Map</li>
+    </ul>
+  </div>
+  </div>
+  <div id="main">
   <div id="holder">
     <div ng-repeat="item in holder track by $index" id="tube_status">
       <p>{{item}}</p>
@@ -27,5 +37,6 @@
     <p id="textcolor">Arrival Time {{arrival_time}}</p>
   </div>
   </div>
+</div>
  </body>
 </html>
