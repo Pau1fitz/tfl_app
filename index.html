@@ -18,7 +18,9 @@
     </ul>
   </div>
   </div>
+
   <div id="main">
+    <p id="status_header">Status Update</p>
   <div id="holder">
     <div ng-repeat="item in holder track by $index" id="tube_status">
       <p>{{item}}</p>
@@ -26,11 +28,12 @@
   </div>
 
   <div>
-    <form>
+    <form id="input_box">
       <p id="textcolor">From</p><input ng-model="postcode1" type="text">
       <p id="textcolor">To</p><input ng-model="postcode2" type="text">
       <input type="submit" value="Submit" ng-click="postcode()" >
     </form>
+
     <div ng-repeat="item in destination" id="journey_planner">
     <p id="textcolor">{{item}}</p>
 

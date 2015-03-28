@@ -9,10 +9,10 @@ body{
 }
 
 #header{
+    position:relative;
     background-color: #2d3039;
     height: 58px;
 }
-
 
 #brand{
     position: relative;
@@ -69,11 +69,16 @@ p{
 }
 
 #textcolor{
-  color: black;
   font-family: tubeFont;
 }
 
+#status_header{
+position: absolute;
+}
+
 #tube_status{
+    top: 50px;
+    position: relative;
     padding-bottom: 2px;
     padding-top: 2px;
     padding-left: 2px;
@@ -82,16 +87,15 @@ p{
     margin-right: 74%;
 }
 
-input{
-    padding-bottom: 2px;
-    padding-top: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-
+#input_box{
+    position: absolute;
+    top: 40px;
+    left: 50%;
 }
 
 #journey_planner{
-
+    position: absolute;
+    left: 50%;
     padding-bottom: 2px;
     padding-top: 2px;
     padding-left: 2px;
