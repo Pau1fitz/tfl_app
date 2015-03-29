@@ -57,6 +57,5 @@
   },
   "_source": "git://github.com/janpaepke/ScrollMagic.git",
   "_target": "~2.0.2",
-  "_originalSource": "scrollmagic",
-  "_direct": true
+  "_originalSource": "scrollmagic"
 }
