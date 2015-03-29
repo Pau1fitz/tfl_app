@@ -12,6 +12,9 @@
 <li>Express Node
 <li>ScrollMagic.js
 <li>CSS3
+<li>Grunt
+<li>Protractor
+<li>Jasmine
 
 
 
