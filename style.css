@@ -130,7 +130,10 @@ left: 20px;
     background-color:#0098D4;
     opacity: 0.96;
 }
-
+#footer{
+    position: relative;
+    top: 200px;
+}
 #footer_github{
     position: relative;
     text-align: center;
