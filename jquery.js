@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $('#submit_button').click(function(){
-  $("#journey_planner p").remove();
+  $("#journey_route p").empty();
   console.log("hey")
 });
 });
