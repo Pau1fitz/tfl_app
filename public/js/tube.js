@@ -24,7 +24,7 @@ tube.controller('tubeController', function($scope, $http) {
         $scope.arrival_time = data.routes[0].arrival_time;
         $scope.routes = data.routes[0];
           for (var i = 0; i < $scope.routes.route_parts.length; i++) {
-            $scope.destination.push($scope.routes.route_parts[i].mode + " to: " + $scope.routes.route_parts[i].to_point_name + " arrival time:" + $scope.routes.route_parts[i].arrival_time );
+            $scope.destination.push($scope.routes.route_parts[i].mode + " to:  " + $scope.routes.route_parts[i].to_point_name + " arrival time: " + $scope.routes.route_parts[i].arrival_time );
           };
     });
   };

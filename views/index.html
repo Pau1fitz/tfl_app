@@ -24,15 +24,14 @@
   </div>
 
   <div id="main">
-
     <p id="status_header">Status Update</p>
     <div ng-repeat="item in holder track by $index" id="tube_status">
       <p>{{item}}</p>
     </div>
     <div id="journey">
       <form id="input_box">
-        <p id="textcolor">From</p><input ng-model="postcode1" type="text">
-        <p id="textcolor">To</p><input ng-model="postcode2" type="text">
+        <p id="textcolor">From</p><input ng-model="postcode1" type="text" placeholder="Eg. SW4 8LJ">
+        <p id="textcolor">To</p><input ng-model="postcode2" type="text" placeholder="Eg. SW4 8LJ">
         <input type="submit" value="Submit" ng-click="postcode()" id="submit_button" >
       </form>
       <div id="journey_route">
