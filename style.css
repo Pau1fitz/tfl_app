@@ -2,10 +2,10 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%;
+    background-image:url('http://www.tfl.gov.uk/cdn/static/cms/images/promos/home-primary-1400x700.jpg');
 }
 
 #main{
-    background-image:url('http://www.tfl.gov.uk/cdn/static/cms/images/promos/home-primary-1400x700.jpg');
     height: 750px;
 }
 
@@ -38,7 +38,14 @@ li{
     bottom: 20px;
 }
 
-a{
+#map{
+    position: absolute;
+    height: 19px;
+    width: 193px;
+    z-index: +1;
+}
+
+#scroll{
     position: absolute;
     height: 19px;
     width: 193px;
@@ -75,15 +82,16 @@ p{
 
 #textcolor1{
   font-family: tubeFont;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 3px;
+  opacity: 0.92
 }
 
 #status_header{
 position: absolute;
 left: 20px;
-}
-
-#holder{
-    width: 80%;
 }
 
 #journey{
@@ -101,6 +109,7 @@ left: 20px;
     padding-right: 2px;
     margin-left: 20px;
     margin-right: 74%;
+    opacity: 0.97;
 }
 
 #input_box{
@@ -114,60 +123,89 @@ left: 20px;
     width: 30%;
     left: 48%;
     top: 220px;
-    padding-bottom: 2px;
-    padding-top: 2px;
     padding-left: 2px;
     padding-right: 2px;
     margin-left: 20px;
     margin-right: 75%;
     background-color:#0098D4;
+    opacity: 0.96;
 }
 
-#tube_status:nth-child(1) {
-    background: #B36305;
+#footer_github{
+    position: relative;
+    text-align: center;
+}
+#bottom{
+    height: 80px;
+    width: 60px;
+    position: absolute;
+}
+
+#github{
+    background-image: url('http://zachwill.github.io/hn/img/octocat.png');
+    height: 90px;
+    position: relative;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    margin-left: 47%;
+    top: 40px;
+}
+
+#github_link{
+    height: 90px;
+    position: relative;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    margin-left: 47%;
 }
 
 #tube_status:nth-child(2) {
-    background: #E32017;
+    background: #B36305;
 }
 
 #tube_status:nth-child(3) {
-    background: #FFD300;
+    background: #E32017;
 }
 
 #tube_status:nth-child(4) {
-    background: #00782A;
+    background: #FFD300;
 }
 
 #tube_status:nth-child(5) {
-    background: #F3A9BB;
+    background: #00782A;
 }
 
 #tube_status:nth-child(6) {
-    background: #A0A5A9;
+    background: #F3A9BB;
 }
 
 #tube_status:nth-child(7) {
-    background: #9B0056;
+    background: #A0A5A9;
 }
 
 #tube_status:nth-child(8) {
-    background: #000000;
+    background: #9B0056;
 }
 
 #tube_status:nth-child(9) {
-    background: #003688;
+    background: #000000;
 }
 
 #tube_status:nth-child(10) {
-    background: #0098D4;
+    background: #003688;
 }
 
 #tube_status:nth-child(11) {
-    background: #95CDBA;
+    background: #0098D4;
 }
 
 #tube_status:nth-child(12) {
+    background: #95CDBA;
+}
+
+#tube_status:nth-child(13) {
     background: #00A4A7;
 }
+
+
 

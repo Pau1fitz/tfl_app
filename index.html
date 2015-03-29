@@ -6,40 +6,51 @@
   <link rel="stylesheet" href="style.css">
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
   <script src="tube.js"></script>
   <script src="jquery.js"></script>
+  <script src="scrollmagic.js"></script>
  </head>
  <body ng-controller="tubeController">
   <div id="header">
-    <div id="brand"></div>
-    <p id="logo">PFL</p>
-    <ul>
-      <li>Plan a Journey</li>
-      <li><a href="https://www.tfl.gov.uk/cdn/static/cms/documents/standard-tube-map.pdf"></a>Tube Map</li>
-    </ul>
-  </div>
+      <div id="brand"></div>
+        <p id="logo">PFL</p>
+      <ul>
+        <li>Plan a Journey</li>
+        <li><a href="#bottom" id="scroll"></a>Bottom</li>
+        <!-- <li><a href="#bottom"></a>Github</li> -->
+        <li><a href="https://www.tfl.gov.uk/cdn/static/cms/documents/standard-tube-map.pdf" id="map" ></a>Tube Map</li>
+      </ul>
   </div>
 
-<div id="main">
+  <div id="main">
+
     <p id="status_header">Status Update</p>
-  <div id="holder">
     <div ng-repeat="item in holder track by $index" id="tube_status">
       <p>{{item}}</p>
     </div>
+    <div id="journey">
+      <form id="input_box">
+        <p id="textcolor">From</p><input ng-model="postcode1" type="text">
+        <p id="textcolor">To</p><input ng-model="postcode2" type="text">
+        <input type="submit" value="Submit" ng-click="postcode()" id="submit_button" >
+      </form>
+      <div id="journey_route">
+        <div ng-repeat="item in destination track by $index" id="journey_planner">
+        <p id="textcolor1">{{item}}</p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+   <div id="footer">
+    <div id="github"><a id="bottom" href="https://github.com/Pau1fitz/tfl_app"></a></div>
+    <p id="footer_github">View on github</p>
+
   </div>
 
-  <div id="journey">
-    <form id="input_box">
-      <p id="textcolor">From</p><input ng-model="postcode1" type="text">
-      <p id="textcolor">To</p><input ng-model="postcode2" type="text">
-      <input type="submit" value="Submit" ng-click="postcode()" id="submit_button" >
-    </form>
-    <div id="journey_route">
-    <div ng-repeat="item in destination track by $index" id="journey_planner">
-    <p id="textcolor1">{{item}}</p>
-  </div>
-  </div>
-</div>
-</div>
+
+
+
  </body>
 </html>

@@ -28,9 +28,7 @@ $scope.postcode = function(){
         for (var i = 0; i < $scope.routes.route_parts.length; i++) {
         $scope.destination.push($scope.routes.route_parts[i].mode + " to: " + $scope.routes.route_parts[i].to_point_name + " arrival time:" + $scope.routes.route_parts[i].arrival_time );
 
-
           };
-       console.log($scope.dest)
     });
 
     };
