@@ -6,6 +6,7 @@ body{
 
 #main{
     background-image:url('http://www.tfl.gov.uk/cdn/static/cms/images/promos/home-primary-1400x700.jpg');
+    height: 750px;
 }
 
 #header{
@@ -16,7 +17,7 @@ body{
 
 #brand{
     position: relative;
-    left: 30px;
+    margin-left: 30px;
     top: 17px;
     background-image: url('http://www.bunnyfoot.com/blog/wp-content/uploads/2013/11/brand-tfl.png');
     background-size: 40px 30px;
@@ -72,13 +73,27 @@ p{
   font-family: tubeFont;
 }
 
+#textcolor1{
+  font-family: tubeFont;
+}
+
 #status_header{
 position: absolute;
+}
+
+#holder{
+    width: 80%;
+}
+
+#journey{
+    position: relative;
+    bottom: 700px;
 }
 
 #tube_status{
     top: 50px;
     position: relative;
+    width: 30%;
     padding-bottom: 2px;
     padding-top: 2px;
     padding-left: 2px;
@@ -94,8 +109,10 @@ position: absolute;
 }
 
 #journey_planner{
-    position: absolute;
-    left: 50%;
+    position: relative;
+    width: 30%;
+    left: 48%;
+    top: 220px;
     padding-bottom: 2px;
     padding-top: 2px;
     padding-left: 2px;

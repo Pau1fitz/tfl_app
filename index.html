@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="style.css">
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
-   <script src="tube.js"></script>
+  <script src="tube.js"></script>
+  <script src="jquery.js"></script>
  </head>
  <body ng-controller="tubeController">
   <div id="header">
@@ -27,17 +28,15 @@
     </div>
   </div>
 
-  <div>
+  <div id="journey">
     <form id="input_box">
       <p id="textcolor">From</p><input ng-model="postcode1" type="text">
       <p id="textcolor">To</p><input ng-model="postcode2" type="text">
-      <input type="submit" value="Submit" ng-click="postcode()" >
+      <input type="submit" value="Submit" ng-click="postcode()" id="submit_button" >
     </form>
 
-    <div ng-repeat="item in destination" id="journey_planner">
-    <p id="textcolor">{{item}}</p>
-
-    <p id="textcolor">Arrival Time {{arrival_time}}</p>
+    <div ng-repeat="item in destination track by $index" id="journey_planner">
+    <p id="textcolor1">{{item}}</p>
   </div>
   </div>
 </div>
