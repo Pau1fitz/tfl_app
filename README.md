@@ -9,6 +9,7 @@
 <ul>
 <li>Angular JS
 <li>jQuery
+<li>Modernizr
 <li>Express Node
 <li>ScrollMagic.js
 <li>CSS3
