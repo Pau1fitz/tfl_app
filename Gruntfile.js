@@ -5,6 +5,38 @@ module.exports = function(grunt){
     jshint: {
       all: ['Gruntfile.js', 'public/**/*.js', 'test/*.js']
     },
+    modernizr: {
+
+    dist: {
+        "devFile" : "lib/modernizr-dev.js",
+
+        "outputFile" : "build/modernizr-custom.js",
+        "extra" : {
+            "shiv" : true,
+            "printshiv" : false,
+            "load" : true,
+            "mq" : false,
+            "cssclasses" : true
+        },
+        "extensibility" : {
+            "addtest" : false,
+            "prefixed" : false,
+            "teststyles" : false,
+            "testprops" : false,
+            "testallprops" : false,
+            "hasevents" : false,
+            "prefixes" : false,
+            "domprefixes" : false,
+            "cssclassprefix": ""
+        },
+        "uglify" : true,
+        "tests" : [],
+        "parseFiles" : true,
+        "matchCommunityTests" : false,
+        "customTests" : []
+        }
+
+    },
     protractor: {
       options: {
         configFile: "test/conf.js", // Default config file
@@ -29,6 +61,7 @@ module.exports = function(grunt){
         command: 'webdriver-manager start',// Target-specific file lists and/or options go here.
       },
     },
+
     express: {
       options: {
         port: 3000,
@@ -47,6 +80,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-protractor-webdriver');
   grunt.loadNpmTasks('grunt-selenium-webdriver');
   grunt.loadNpmTasks('grunt-protractor-runner');
+  grunt.loadNpmTasks("grunt-modernizr");
   grunt.registerTask('default', ['express','jshint','protractor_webdriver','protractor']);
 
 };

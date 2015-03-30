@@ -25,6 +25,7 @@
     "grunt-contrib-jshint": "^0.11.1",
     "grunt-express": "^1.4.1",
     "grunt-express-server": "^0.4.19",
+    "grunt-modernizr": "^0.6.0",
     "grunt-protractor-runner": "^1.2.1",
     "grunt-protractor-webdriver": "^0.2.0",
     "grunt-selenium-webdriver": "^0.2.450",
