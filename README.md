@@ -4,7 +4,7 @@
 
 <img src="https://github.com/Pau1fitz/tfl_app/blob/master/tube.png" width="200" height="300"/>
 
-<h3> Technologies Used
+<h3> Technologies Used</h3>
 <p>
 <ul>
 <li>Angular JS</li>
