@@ -7,16 +7,18 @@
 <h3> Technologies Used
 <p>
 <ul>
-<li>Angular JS
-<li>jQuery
-<li>Modernizr
-<li>Express Node
-<li>ScrollMagic.js
-<li>CSS3
-<li>Grunt
-<li>Protractor
-<li>Jasmine
-<li>TFL API
+<li>Angular JS</li>
+<li>jQuery</li>
+<li>Modernizr</li>
+<li>Express Node</li>
+<li>ScrollMagic.js</li>
+<li>CSS3</li>
+<li>Grunt</li>
+<li>Protractor</li>
+<li>Jasmine</li>
+<li>TFL API</li>
+</ul>
+</p>
 
 
 
